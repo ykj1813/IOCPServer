@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="99.Etc">
+      <UniqueIdentifier>{e5cf2b5a-51ef-42c1-88a1-ef23448e65fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code">
+      <UniqueIdentifier>{b8e465b9-ec72-412f-99cb-925373a09b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export">
+      <UniqueIdentifier>{e0f89151-eb04-42a7-903f-8b7ca0e1cad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Manager">
+      <UniqueIdentifier>{5af89cbe-3f29-4806-a4b4-a3baefa8a173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Base">
+      <UniqueIdentifier>{74ab3bd7-8e11-424c-ba4b-58fb73f94583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Internal">
+      <UniqueIdentifier>{15779853-21c2-4a5b-ac9f-970f139c0d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Header">
+      <UniqueIdentifier>{451b2c2e-18ee-40e4-a6e6-60f170525614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\IOCP">
+      <UniqueIdentifier>{e6c91fb0-ca94-41ef-b0b1-d94503affeef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Interface">
+      <UniqueIdentifier>{b8a04d77-e6d9-4120-b4d2-5fd96585057d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Network">
+      <UniqueIdentifier>{238c4f79-9709-47f1-999a-47bf2561d268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Utility">
+      <UniqueIdentifier>{10ebf5dc-e028-4ecc-9485-c2cc6b37deb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\IOCP\Server">
+      <UniqueIdentifier>{e7218322-ea25-4189-833f-2a941b1f7821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\IOCP\Client">
+      <UniqueIdentifier>{9f0ede08-0ba9-4d85-a11b-291f70e1d2ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>99.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>99.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Manager\PacketManager.h">
+      <Filter>00.Code\Export\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerBaseMacro.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerBaseInclude.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Base\DDServerBaseObject.h">
+      <Filter>00.Code\Export\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerBaseStruct.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerBaseType.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\DDServerBase.h">
+      <Filter>00.Code\Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerBaseEnum.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Interface\IDDThreadEvent.h">
+      <Filter>00.Code\Export\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerBaseFunction.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Network\NetAddress.h">
+      <Filter>00.Code\Export\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Utility\DDServerBaseSocketUtils.h">
+      <Filter>00.Code\Export\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Network\NetBuffer.h">
+      <Filter>00.Code\Export\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\Client\DDIOCPServiceClient.h">
+      <Filter>00.Code\Export\IOCP\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\DDIOCPObject.h">
+      <Filter>00.Code\Export\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\DDIOCPService.h">
+      <Filter>00.Code\Export\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\DDIOCPSession.h">
+      <Filter>00.Code\Export\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\Server\DDIOCPListener.h">
+      <Filter>00.Code\Export\IOCP\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\Server\DDIOCPServiceServer.h">
+      <Filter>00.Code\Export\IOCP\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\Server\DDIOCPSessionServer.h">
+      <Filter>00.Code\Export\IOCP\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\DDIOCPThreadWorker.h">
+      <Filter>00.Code\Export\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\IOCP\Client\DDIOCPSessionClient.h">
+      <Filter>00.Code\Export\IOCP\Client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>99.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\Manager\PacketManager.cpp">
+      <Filter>00.Code\Export\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>99.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\Base\DDServerBaseObject.cpp">
+      <Filter>00.Code\Export\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\DDServerBase.cpp">
+      <Filter>00.Code\Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\Interface\IDDThreadEvent.cpp">
+      <Filter>00.Code\Export\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\Network\NetAddress.cpp">
+      <Filter>00.Code\Export\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\Utility\DDServerBaseSocketUtils.cpp">
+      <Filter>00.Code\Export\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\Network\NetBuffer.cpp">
+      <Filter>00.Code\Export\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\Client\DDIOCPServiceClient.cpp">
+      <Filter>00.Code\Export\IOCP\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\DDIOCPObject.cpp">
+      <Filter>00.Code\Export\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\DDIOCPService.cpp">
+      <Filter>00.Code\Export\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\DDIOCPSession.cpp">
+      <Filter>00.Code\Export\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\Server\DDIOCPListener.cpp">
+      <Filter>00.Code\Export\IOCP\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\Server\DDIOCPServiceServer.cpp">
+      <Filter>00.Code\Export\IOCP\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\Server\DDIOCPSessionServer.cpp">
+      <Filter>00.Code\Export\IOCP\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\DDIOCPThreadWorker.cpp">
+      <Filter>00.Code\Export\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\IOCP\Client\DDIOCPSessionClient.cpp">
+      <Filter>00.Code\Export\IOCP\Client</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

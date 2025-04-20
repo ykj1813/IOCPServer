@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="99.Etc">
+      <UniqueIdentifier>{1ff16d36-c76c-4651-a378-20ba16c477c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code">
+      <UniqueIdentifier>{b0941284-7881-4d31-89e0-0def059fb8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Header">
+      <UniqueIdentifier>{c991e338-8ff5-40f7-8aa5-1c542ea9640f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\IOCP">
+      <UniqueIdentifier>{bccdbc4a-b45d-4bd2-8a96-46af9e1c5a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\DB">
+      <UniqueIdentifier>{eb38dab2-204c-4543-b72b-3e4520abc376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.PacketHeader">
+      <UniqueIdentifier>{2915ae30-8024-41ec-950f-0d791c58ff41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DDServerMain.cpp">
+      <Filter>99.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>99.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\IOCP\DDSM_IOCPSession.cpp">
+      <Filter>00.Code\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\IOCP\DDSM_IOCPListener.cpp">
+      <Filter>00.Code\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\IOCP\DDSM_IOCPService.cpp">
+      <Filter>00.Code\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\DB\DDAuthDBManager.cpp">
+      <Filter>00.Code\DB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>99.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>99.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Header\DDServerMainMacro.h">
+      <Filter>00.Code\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Header\DDServerMainStruct.h">
+      <Filter>00.Code\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Header\DDServerMainType.h">
+      <Filter>00.Code\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\IOCP\DDSM_IOCPSession.h">
+      <Filter>00.Code\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\IOCP\DDSM_IOCPListener.h">
+      <Filter>00.Code\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Header\DDServerMainPacketMsg.h">
+      <Filter>00.Code\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Header\DDServerMainInclude.h">
+      <Filter>00.Code\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\IOCP\DDSM_IOCPService.h">
+      <Filter>00.Code\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\DB\DDAuthDBManager.h">
+      <Filter>00.Code\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PacketHeader\Auth\DDPacketHeaderAuth.h">
+      <Filter>01.PacketHeader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

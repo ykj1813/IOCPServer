@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a67d4c94-b62b-4fd9-b3ed-a5c3e7f439c0}</ProjectGuid>
+    <RootNamespace>DDServerMain</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)..\..\..\..\Common\ExternalModules\DDCommonBase\$(LibrariesArchitecture)\Include;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerBase\Include;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerDB\Include;$(ProjectDir)..\..\..\PacketHeader\Auth;$(ProjectDir);$(ProjectDir)Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\..\Common\ExternalModules\DDCommonBase\$(LibrariesArchitecture)\lib;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerBase\lib;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerDB\lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(MSBuildProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)..\..\..\..\Common\ExternalModules\DDCommonBase\$(LibrariesArchitecture)\Include;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerBase\Include;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerDB\Include;$(ProjectDir)..\..\..\PacketHeader\Auth;$(ProjectDir);$(ProjectDir)Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\..\Common\ExternalModules\DDCommonBase\$(LibrariesArchitecture)\lib;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerBase\lib;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerDB\lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(MSBuildProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)..\..\..\..\Common\ExternalModules\DDCommonBase\$(LibrariesArchitecture)\Include;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerBase\Include;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerDB\Include;$(ProjectDir)..\..\..\PacketHeader\Auth;$(ProjectDir);$(ProjectDir)Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\..\Common\ExternalModules\DDCommonBase\$(LibrariesArchitecture)\lib;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerBase\lib;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerDB\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(MSBuildProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)..\..\..\..\Common\ExternalModules\DDCommonBase\$(LibrariesArchitecture)\Include;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerBase\Include;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerDB\Include;$(ProjectDir)..\..\..\PacketHeader\Auth;$(ProjectDir);$(ProjectDir)Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\..\Common\ExternalModules\DDCommonBase\$(LibrariesArchitecture)\lib;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerBase\lib;$(ProjectDir)..\..\..\ExternalModules\$(LibrariesArchitecture)\DDServerDB\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(MSBuildProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;COMPILE_RAPIDCSV;COMPILE_RAPIDJSON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DDCommonBase_d.lib;DDServerBase_d.lib;DDServerDB_d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;COMPILE_RAPIDCSV;COMPILE_RAPIDJSON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DDCommonBase.lib;DDServerBase.lib;DDServerDB.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_CONSOLE;COMPILE_RAPIDCSV;COMPILE_RAPIDJSON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DDCommonBase_d.lib;DDServerBase_d.lib;DDServerDB_d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_CONSOLE;COMPILE_RAPIDCSV;COMPILE_RAPIDJSON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DDCommonBase.lib;DDServerBase.lib;DDServerDB.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\DB\DDAuthDBManager.cpp" />
+    <ClCompile Include="Code\IOCP\DDSM_IOCPService.cpp" />
+    <ClCompile Include="Code\IOCP\DDSM_IOCPSession.cpp" />
+    <ClCompile Include="Code\IOCP\DDSM_IOCPListener.cpp" />
+    <ClCompile Include="DDServerMain.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\PacketHeader\Auth\DDPacketHeaderAuth.h" />
+    <ClInclude Include="Code\DB\DDAuthDBManager.h" />
+    <ClInclude Include="Code\Header\DDServerMainInclude.h" />
+    <ClInclude Include="Code\Header\DDServerMainMacro.h" />
+    <ClInclude Include="Code\Header\DDServerMainPacketMsg.h" />
+    <ClInclude Include="Code\Header\DDServerMainStruct.h" />
+    <ClInclude Include="Code\Header\DDServerMainType.h" />
+    <ClInclude Include="Code\IOCP\DDSM_IOCPService.h" />
+    <ClInclude Include="Code\IOCP\DDSM_IOCPSession.h" />
+    <ClInclude Include="Code\IOCP\DDSM_IOCPListener.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

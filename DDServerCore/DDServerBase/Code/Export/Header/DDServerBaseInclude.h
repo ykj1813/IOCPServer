@@ -1,0 +1,11 @@
+#pragma once
+
+#define NOMINMAX
+#define WIN32_LEAN_AND_MEAN             // 거의 사용되지 않는 내용을 Windows 헤더에서 제외합니다.
+
+#include <windows.h>
+
+#include "Header/DDServerBaseMacro.h"
+#include "Header/DDServerBaseType.h"
+#include "Header/DDServerBaseEnum.h"
+#include "Header/DDServerBaseStruct.h"

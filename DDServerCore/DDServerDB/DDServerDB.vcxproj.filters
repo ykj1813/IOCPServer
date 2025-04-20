@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="99.Etc">
+      <UniqueIdentifier>{d25c1477-d3fe-4df2-bfa7-231a6d7629b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code">
+      <UniqueIdentifier>{ebc69d53-46a3-4b68-a64b-09b62f23573d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export">
+      <UniqueIdentifier>{e1d7ce47-4145-465d-a239-d9da03660b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Header">
+      <UniqueIdentifier>{f5bcc5c6-c803-413c-93b7-cf183dbc7d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\DB">
+      <UniqueIdentifier>{ca43aa7a-1322-4e97-8974-d01bd8dc4c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Base">
+      <UniqueIdentifier>{cb0e8e3f-8ce4-4ac9-887d-f686055de8f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Internal">
+      <UniqueIdentifier>{653a6329-f359-4eca-927a-4edb5af9a120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Internal\DB">
+      <UniqueIdentifier>{bb8d423d-1b4a-4db6-a7bc-cc1568551cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Code\Export\Interface">
+      <UniqueIdentifier>{c956a32a-58f5-455c-b2a3-39df5c46cb7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>99.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>99.Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\DDServerDB.h">
+      <Filter>00.Code\Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerDBEnum.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerDBFunction.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerDBInclude.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerDBMacro.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerDBStruct.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Header\DDServerDBType.h">
+      <Filter>00.Code\Export\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\DB\DDDBConnectionPool.h">
+      <Filter>00.Code\Export\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Base\DDServerDBObject.h">
+      <Filter>00.Code\Export\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\DB\DDDBConnection.h">
+      <Filter>00.Code\Export\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\DB\DDDBProcedure.h">
+      <Filter>00.Code\Export\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Export\Interface\DDDBManager.h">
+      <Filter>00.Code\Export\Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>99.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>99.Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\DDServerDB.cpp">
+      <Filter>00.Code\Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\DB\DDDBConnectionPool.cpp">
+      <Filter>00.Code\Export\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\Base\DDServerDBObject.cpp">
+      <Filter>00.Code\Export\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\DB\DDDBConnection.cpp">
+      <Filter>00.Code\Export\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\DB\DDDBProcedure.cpp">
+      <Filter>00.Code\Export\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Export\Interface\DDDBManager.cpp">
+      <Filter>00.Code\Export\Interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
